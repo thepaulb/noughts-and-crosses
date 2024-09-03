@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Noughts &amp; Crosses</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- Add your site or application content here -->
+	<h1>Noughts &amp; Crosses</h1>
+	<div class="game">
+		<h3 class="status">Next move: X</h3>
+		<div class="game-board">
+			<div class="board">
+				<div class="row">
+					<button class="square"></button>
+					<button class="square"></button>
+					<button class="square"></button>
+				</div>
+				<div class="row">
+					<button class="square"></button>
+					<button class="square"></button>
+					<button class="square"></button>
+				</div>
+				<div class="row">
+					<button class="square"></button>
+					<button class="square"></button>
+					<button class="square"></button>
+				</div>
+			</div>
+			<div class="log">
+				<ol>
+					<li><button data-jump-to="0">Restart game</button></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		(function(Game) {
+			new Game(document.querySelector('.game'));
+		})(Game);
+	</script>
+
+</body>
+
+</html>
+
